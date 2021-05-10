@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="WhatsApp Image 2021-05-10 at 12.16.58 PM.jpeg">
+    <h3 id="names">Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. My Father Dhruv Mahajan",
+   "2. My Mother Ritu Gupta",
+   "3. My brother Arihaan Mahajan",
+   "4. Me Grand mother Suman gupta",
+   "5. MY Grandfather Ravinder raj gupta",
+   "6. Me Arindam Mahajan"
+   ];
+ var images=[
+   "father.png",
+   "mother.png",
+   "bro.png",
+   "gmother.png",
+   "gfather.png",
+   "me.png"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("names").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==6){
+     i=0;
+   }}
+ </script>
+</html>
